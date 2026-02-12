@@ -1,5 +1,5 @@
-# 🎓 SkyWater 130nm PDK Installation Guide
-### Complete Beginner-Friendly Guide for Ubuntu 22.04
+# SkyWater 130nm PDK Installation Guide
+### Complete Guide for Ubuntu 22.04
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04-orange.svg)](https://ubuntu.com/)
@@ -10,20 +10,19 @@
 **Author:** Farrdin Nowshad  
 **Last Updated:** February 2026
 
-## ⭐ Star this repo if it helped you!
+## Star this repo if it helped you!
 
-## 🎯 What This Guide Covers
+## What This Guide Covers
 
-- ✅ Complete toolchain: Magic, Xschem, Ngspice, Netgen, KLayout, Yosys, and more
-- ✅ SkyWater 130nm PDK installation
-- ✅ All dependencies and configurations
-- ✅ Common problems and solutions
-- ✅ Beginner-friendly explanations
+-  Complete toolchain: Magic, Xschem, Ngspice, Netgen, KLayout, Yosys, and more
+-  SkyWater 130nm PDK installation
+-  All dependencies and configurations
+-  Common problems and solutions
+-  Beginner-friendly explanations
 
-## 📊 Stats
+## Stats
 
-- **Installation Time:** 2-4 hours
+- **Installation Time:** 4-6 hours
 - **Disk Space:** 100GB
 - **Tested On:** Ubuntu 22.04 LTS (VirtualBox and Native)
 
-[View Full Guide →](README.md)
