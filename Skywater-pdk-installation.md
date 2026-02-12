@@ -1,32 +1,20 @@
-# 🎓 SkyWater 130nm PDK Installation Guide
+# SkyWater 130nm PDK Installation Guide
 
 <div align="center">
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
-[![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04%20LTS-E95420?logo=ubuntu)](https://ubuntu.com/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/FarrdinNowshad/skywater-pdk-installation-guide/blob/main/LICENSE)
+[![Ubuntu](https://img.shields.io/badge/Ubuntu-22.04%20LTS-E95420?logo=ubuntu)]([https://ubuntu.com/](https://releases.ubuntu.com/jammy/))
 [![Tested](https://img.shields.io/badge/Tested-February%202026-success)](/)
-[![Stars](https://img.shields.io/github/stars/yourusername/skywater-pdk-installation-guide?style=social)](https://github.com/yourusername/skywater-pdk-installation-guide)
 
 **The most comprehensive, beginner-friendly guide to installing the complete SkyWater 130nm PDK toolchain on Ubuntu 22.04**
-
-[📖 Read the Guide](#-installation-steps) • [🐛 Report Bug](https://github.com/yourusername/skywater-pdk-installation-guide/issues) • [✨ Request Feature](https://github.com/yourusername/skywater-pdk-installation-guide/issues) • [🤝 Contribute](CONTRIBUTING.md)
 
 </div>
 
 ---
 
-## 🌟 Why This Guide?
+## Why This Guide?
 
 After struggling through countless incomplete tutorials and scattered documentation, I created this guide to **save you hours of frustration**. This is the guide I wish I had when I started.
-
-### ✅ What Makes This Different:
-
-- **Tested & Verified** - Every command tested on fresh Ubuntu 22.04 installations
-- **All Issues Documented** - Solutions to 15+ common installation problems
-- **Beginner-Friendly** - Clear explanations, no assumed knowledge
-- **Complete Toolchain** - Magic, Xschem, Ngspice, KLayout, Yosys, and more
-- **One-Stop Solution** - Everything in one place, no hunting across forums
-- **Active Maintenance** - Updated with community feedback
 
 ---
 
@@ -42,9 +30,7 @@ After struggling through countless incomplete tutorials and scattered documentat
 
 ---
 
-## 🎯 What You'll Install
-
-A complete, industry-standard VLSI design environment:
+## What You'll Install
 
 | Tool | Purpose | Version |
 |------|---------|---------|
@@ -82,11 +68,11 @@ cd skywater-pdk-installation-guide
 
 ### Step-by-Step Installation (Recommended for Beginners)
 
-👉 **[Start with the Complete Guide](#-installation-steps)**
+**[Start with the Complete Guide](#-installation-steps)**
 
 ---
 
-## 📖 Table of Contents
+## Table of Contents
 
 1. [System Requirements](#-system-requirements)
 2. [Pre-Installation Setup](#-pre-installation-setup)
@@ -107,7 +93,7 @@ cd skywater-pdk-installation-guide
 
 ---
 
-## 💻 System Requirements
+## System Requirements
 
 ### Minimum Requirements
 
@@ -119,14 +105,14 @@ cd skywater-pdk-installation-guide
 
 ### Tested Environments
 
-✅ **VirtualBox** - Works perfectly with 8GB RAM allocated  
-✅ **Native Ubuntu** - Best performance  
-✅ **WSL2** - Not officially tested but should work  
-⚠️ **Ubuntu 20.04** - May work but not tested
+ **VirtualBox** - Works perfectly with 8GB RAM allocated  
+ **Native Ubuntu** - Best performance  
+ **WSL2** - Not officially tested but should work  
+ **Ubuntu 20.04** - May work but not tested
 
 ---
 
-## 🔧 Pre-Installation Setup
+## Pre-Installation Setup
 
 ### Step 0: Fix Sudo Access (If Needed)
 
@@ -161,8 +147,6 @@ sudo apt update
 sudo apt upgrade -y
 sudo apt install -y software-properties-common curl git wget build-essential
 ```
-
-**Time:** 5-10 minutes
 
 ---
 
@@ -231,7 +215,6 @@ libxcb1-dev libxcb-render0-dev libxcb-shape0-dev libxcb-xfixes0-dev \
 libbz2-dev liblzma-dev
 ```
 
-**Time:** 10-15 minutes
 
 ---
 
@@ -252,9 +235,9 @@ mkdir -p ~/workingdir/{layout,schematic,verilog,simulations}
 
 ---
 
-## 🛠️ Installation Steps
+## Installation Steps
 
-> **⏱️ Total Time:** 4-6 hours (mostly automated compilation)
+> ** Total Time:** 4-6 hours (mostly automated compilation)
 
 ---
 
@@ -283,8 +266,7 @@ make install
 $HOME/tools/magic/bin/magic --version
 ```
 
-**Expected output:** Version information ✅  
-**Time:** 5-10 minutes
+**Expected output:** Version information  
 
 ---
 
@@ -308,8 +290,7 @@ make install
 $HOME/tools/xschem/bin/xschem --version
 ```
 
-**Expected output:** Version information ✅  
-**Time:** 3-5 minutes
+**Expected output:** Version information  
 
 ---
 
@@ -342,8 +323,7 @@ make install
 $HOME/tools/ngspice/bin/ngspice --version
 ```
 
-**Expected output:** `ngspice-45.2` ✅  
-**Time:** 10-15 minutes
+**Expected output:** `ngspice-45.2` 
 
 ---
 
@@ -367,8 +347,7 @@ make install
 $HOME/tools/netgen/bin/netgen --version
 ```
 
-**Expected output:** Version information ✅  
-**Time:** 3-5 minutes
+**Expected output:** Version information 
 
 ---
 
@@ -376,7 +355,7 @@ $HOME/tools/netgen/bin/netgen --version
 
 **What it does:** View, edit, and verify chip layouts
 
-**⚠️ Important:** Install Qt5 GUI packages first!
+** Important:** Install Qt5 GUI packages first!
 
 ```bash
 # Install Qt5 packages for GUI
@@ -415,8 +394,7 @@ cp -r bin-release/* $HOME/tools/klayout/bin/
 $HOME/tools/klayout/bin/klayout -v
 ```
 
-**Expected output:** `KLayout 0.30.x` ✅  
-**Time:** 20-30 minutes (longest build)
+**Expected output:** `KLayout 0.30.x`   
 
 ---
 
@@ -441,8 +419,7 @@ make install
 $HOME/tools/iverilog/bin/iverilog -V
 ```
 
-**Expected output:** `Icarus Verilog version 13.x` ✅  
-**Time:** 5-10 minutes
+**Expected output:** `Icarus Verilog version 13.x`   
 
 ---
 
@@ -461,8 +438,7 @@ sudo apt install -y gtkwave
 gtkwave --version
 ```
 
-**Expected output:** `GTKWave Analyzer v3.3.x` ✅  
-**Time:** 1 minute
+**Expected output:** `GTKWave Analyzer v3.3.x`  
 
 **Note:** You may see a harmless warning about "canberra-gtk-module" - ignore it.
 
@@ -494,8 +470,7 @@ make install
 $HOME/tools/yosys/bin/yosys -V
 ```
 
-**Expected output:** `Yosys 0.x` ✅  
-**Time:** 10-15 minutes
+**Expected output:** `Yosys 0.x`  
 
 ---
 
@@ -503,7 +478,7 @@ $HOME/tools/yosys/bin/yosys -V
 
 **What it does:** Provides process technology files for 130nm chip fabrication
 
-**⚠️ CRITICAL:** Magic must be installed first (you already did this in Step 1)
+** CRITICAL:** Magic must be installed first (you already did this in Step 1)
 
 **This downloads ~2GB and installs ~80GB of data. Takes 30-60 minutes.**
 
@@ -547,12 +522,11 @@ cd ..
 ls $HOME/openpdk/share/pdk/sky130A/
 ```
 
-**Expected output:** `libs.ref` and `libs.tech` directories ✅  
-**Time:** 30-60 minutes
+**Expected output:** `libs.ref` and `libs.tech` directories   
 
 ---
 
-## ⚙️ Environment Configuration
+## Environment Configuration
 
 **This step is CRITICAL!** Without it, tools won't find each other.
 
@@ -603,7 +577,7 @@ EOF
 
 ---
 
-## ✅ Verification
+## Verification
 
 Test that everything works:
 
@@ -619,7 +593,7 @@ In Magic console, type:
 tech
 ```
 
-**Expected:** Should display `sky130A` ✅
+**Expected:** Should display `sky130A`
 
 Type `quit` to exit.
 
@@ -633,7 +607,7 @@ xschem
 ```
 
 Press `Shift + I` → Navigate to `sky130_fd_pr`  
-**Expected:** Should see Sky130 transistors and components ✅
+**Expected:** Should see Sky130 transistors and components
 
 ---
 
@@ -653,7 +627,7 @@ echo $PDK_ROOT
 echo $SKY130A
 ```
 
-**All commands should show version numbers without errors** ✅
+**All commands should show version numbers without errors**
 
 ---
 
@@ -751,7 +725,7 @@ Update the version number in the wget command.
 
 ---
 
-## 🎓 Next Steps - Start Designing!
+## Next Steps - Start Designing!
 
 ### 1. Learn Magic VLSI
 
@@ -828,7 +802,7 @@ vvp test
 
 ---
 
-## 📚 Additional Resources
+## Additional Resources
 
 ### Official Documentation
 
@@ -838,34 +812,6 @@ vvp test
 - [Ngspice](http://ngspice.sourceforge.net/)
 - [KLayout](https://www.klayout.de/)
 - [Yosys](https://yosyshq.net/yosys/)
-
-### Learning Resources
-
-- [SkyWater PDK Slack](https://skywater-pdk.slack.com/)
-- [OpenCircuitDesign.com](http://opencircuitdesign.com/)
-- [eFabless](https://efabless.com/) - Submit your designs!
-- [Zero to ASIC Course](https://zerotoasiccourse.com/)
-
-### Community
-
-- [r/VLSI](https://reddit.com/r/VLSI)
-- [r/FPGA](https://reddit.com/r/FPGA)
-- [Open Source Silicon Foundation](https://www.fossi-foundation.org/)
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for guidelines.
-
-### How You Can Help
-
-- 🐛 Report bugs and issues
-- 📝 Improve documentation
-- ✨ Add new tool installations
-- 🧪 Test on different systems
-- 📸 Add screenshots
-- 🌍 Translate to other languages
 
 ---
 
@@ -883,54 +829,9 @@ Please check individual tool licenses before use.
 
 ---
 
-## 🙏 Acknowledgments
-
-### Author
-
-**Farrdin Nowshad**  
-- Email: [your-email@example.com]
-- GitHub: [@yourhandle](https://github.com/yourhandle)
-- LinkedIn: [your-profile](https://linkedin.com/in/yourprofile)
-
-### Credits
-
-- **Tim Edwards** - Magic VLSI
-- **Stefan Schippers** - Xschem
-- **Google & SkyWater** - SkyWater PDK
-- **All open-source contributors** to the tools in this guide
-
-### Special Thanks
-
-- The amazing VLSI community for feedback and testing
-- eFabless for promoting open-source silicon
-- Everyone who reported issues and suggested improvements
-
----
-
-## ⭐ Star This Repository
-
-**If this guide helped you, please star this repository!**
-
-It helps others discover this guide and motivates continued maintenance.
-
-[![GitHub stars](https://img.shields.io/github/stars/yourusername/skywater-pdk-installation-guide?style=social)](https://github.com/yourusername/skywater-pdk-installation-guide)
-
----
-
-## 📞 Support
-
-Having trouble? Here's how to get help:
-
-1. 📖 Check the [Troubleshooting](#-troubleshooting) section
-2. 🔍 Search [existing issues](https://github.com/yourusername/skywater-pdk-installation-guide/issues)
-3. 🆕 [Open a new issue](https://github.com/yourusername/skywater-pdk-installation-guide/issues/new)
-4. 💬 Join the [SkyWater PDK Slack](https://skywater-pdk.slack.com/)
-
----
-
 <div align="center">
 
-**Made with ❤️ for the open-source silicon community**
+**Made with for the open-source silicon community**
 
 [⬆ Back to Top](#-skywater-130nm-pdk-installation-guide)
 
