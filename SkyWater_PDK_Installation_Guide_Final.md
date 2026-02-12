@@ -441,11 +441,11 @@ $HOME/tools/yosys/bin/yosys -V
 
 ---
 
-## 🎨 Install SkyWater PDK
+## Install SkyWater PDK
 
 **This is the most important step!** The PDK contains all the data about the 130nm fabrication process.
 
-**⚠️ CRITICAL:** Magic must be installed first (you already did this in Tool 1).
+** CRITICAL:** Magic must be installed first (you already did this in Tool 1).
 
 ### Download and Install PDK
 
@@ -494,7 +494,7 @@ ls $HOME/openpdk/share/pdk/sky130A/
 
 ---
 
-## ⚙️ Configure Your Environment
+## Configure Your Environment
 
 **This is critical!** Without this step, your tools won't find each other or the PDK.
 
@@ -640,7 +640,7 @@ yosys -V
 
 ---
 
-## 🎓 Quick Command Reference
+## Quick Command Reference
 
 | Task | Command |
 |------|---------|
@@ -654,7 +654,7 @@ yosys -V
 
 ---
 
-## 🐛 Common Problems & Solutions
+## Common Problems & Solutions
 
 ### Problem 1: "Command not found" after installation
 
@@ -758,7 +758,7 @@ sudo swapon /swapfile
 
 ---
 
-## 🎉 Next Steps - Start Designing!
+## Next Steps - Start Designing!
 
 Congratulations! You now have a complete VLSI design environment. Here's what you can do:
 
